@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+    	{% load static %}
+        <title>LOGIN</title>
+ 		<link rel="stylesheet" type="text/css" href={% static 'stylee.css' %}>       
+    </head>
+    <body >
+<form class="register-form" action="/home/" method="post">		
+  <div class="login-page">
+  <div class="form">
+    {% csrf_token %}
+	 <input type="text" id="userName" name="username" placeholder="username" class="searchTextField"/>
+	 
+	 <input type="password" id="password" name="password" placeholder="password" class="searchTextField"/>
+	 
+     <button><a href="/home">LOGIN</a></button>
+   
+  </div>
+</div>
+</form>
+
+    </body>
+</html>
